@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Primeiro Site</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+        }
+        .container {
+            max-width: 900px;
+        }
+        .bg-gradient-blue {
+            background: linear-gradient(to right, #60a5fa, #3b82f6);
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <header class="bg-white shadow-sm py-4">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-gray-900">Meu Site</a>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#sobre" class="hover:text-blue-600 transition duration-300">Sobre</a></li>
+                    <li><a href="#servicos" class="hover:text-blue-600 transition duration-300">Serviços</a></li>
+                    <li><a href="#contato" class="hover:text-blue-600 transition duration-300">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="bg-gradient-blue text-white py-20 md:py-32 rounded-b-3xl shadow-lg">
+            <div class="container mx-auto px-4 text-center">
+                <h1 class="text-4xl md:text-5xl font-extrabold mb-4 animate-fade-in">Bem-vindo ao Meu Site!</h1>
+                <p class="text-lg md:text-xl mb-8 opacity-90 animate-fade-in-delay">Onde a sua ideia se torna realidade.</p>
+                <a href="#contato" class="bg-white text-blue-600 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-gray-200 transition duration-300 transform hover:scale-105">
+                    Fale Conosco
+                </a>
+            </div>
+        </section>
+
+        <!-- Sobre Section -->
+        <section id="sobre" class="py-16 md:py-24">
+            <div class="container mx-auto px-4">
+                <div class="bg-white rounded-2xl shadow-xl p-8 md:p-12">
+                    <h2 class="text-3xl font-bold text-center mb-6 text-gray-900">Sobre Nós</h2>
+                    <p class="text-center text-gray-600 leading-relaxed">
+                        Somos uma equipe apaixonada por criar soluções digitais incríveis. Com foco em design e funcionalidade, transformamos suas visões em sites que funcionam perfeitamente e encantam os usuários. Nossa missão é oferecer a melhor experiência online para você e seus clientes.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Serviços Section -->
+        <section id="servicos" class="py-16 md:py-24 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-10 text-gray-900">Nossos Serviços</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Card de Serviço 1 -->
+                    <div class="bg-white rounded-2xl shadow-lg p-8 transform hover:scale-105 transition duration-300">
+                        <div class="flex justify-center mb-4">
+                            <span class="text-4xl text-blue-500">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h12l4 4z"/>
+                                    <path d="M12 9v6M9 12h6"/>
+                                </svg>
+                            </span>
+                        </div>
+                        <h3 class="text-xl font-bold text-center mb-2">Design Responsivo</h3>
+                        <p class="text-center text-gray-600">Criamos sites que se adaptam a qualquer tela, garantindo a melhor visualização em desktops, tablets e celulares.</p>
+                    </div>
+                    <!-- Card de Serviço 2 -->
+                    <div class="bg-white rounded-2xl shadow-lg p-8 transform hover:scale-105 transition duration-300">
+                        <div class="flex justify-center mb-4">
+                            <span class="text-4xl text-blue-500">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                                    <path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/>
+                                </svg>
+                            </span>
+                        </div>
+                        <h3 class="text-xl font-bold text-center mb-2">Desenvolvimento Rápido</h3>
+                        <p class="text-center text-gray-600">Utilizamos as melhores práticas para entregar seu site com agilidade, sem comprometer a qualidade ou a performance.</p>
+                    </div>
+                    <!-- Card de Serviço 3 -->
+                    <div class="bg-white rounded-2xl shadow-lg p-8 transform hover:scale-105 transition duration-300">
+                        <div class="flex justify-center mb-4">
+                            <span class="text-4xl text-blue-500">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 8h1a4 4 0 0 1 0 8h-1"/>
+                                    <path d="M2 8h16v8H2zM2 8a4 4 0 0 1 0-8h16a4 4 0 0 1 0 8M2 16a4 4 0 0 0 0 8h16a4 4 0 0 0 0-8"/>
+                                </svg>
+                            </span>
+                        </div>
+                        <h3 class="text-xl font-bold text-center mb-2">Manutenção e Suporte</h3>
+                        <p class="text-center text-gray-600">Oferecemos suporte contínuo para garantir que seu site esteja sempre atualizado, seguro e funcionando perfeitamente.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contato Section -->
+        <section id="contato" class="py-16 md:py-24">
+            <div class="container mx-auto px-4">
+                <div class="bg-white rounded-2xl shadow-xl p-8 md:p-12">
+                    <h2 class="text-3xl font-bold text-center mb-6 text-gray-900">Fale Conosco</h2>
+                    <form class="space-y-6 max-w-lg mx-auto">
+                        <div>
+                            <label for="nome" class="block text-gray-700 font-bold mb-2">Nome Completo</label>
+                            <input type="text" id="nome" name="nome" class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Seu nome">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-gray-700 font-bold mb-2">Email</label>
+                            <input type="email" id="email" name="email" class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="seu-email@exemplo.com">
+                        </div>
+                        <div>
+                            <label for="mensagem" class="block text-gray-700 font-bold mb-2">Mensagem</label>
+                            <textarea id="mensagem" name="mensagem" rows="4" class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Sua mensagem..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-blue-600 text-white font-bold py-3 px-6 rounded-full shadow-lg hover:bg-blue-700 transition duration-300 transform hover:scale-105">
+                            Enviar Mensagem
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-gray-300 py-6 mt-16">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2024 Meu Site. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- CSS Animations -->
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in {
+            animation: fadeIn 1s ease-out forwards;
+        }
+        .animate-fade-in-delay {
+            animation: fadeIn 1.2s ease-out forwards;
+            animation-delay: 0.2s;
+            opacity: 0;
+        }
+    </style>
+
+</body>
+</html>
